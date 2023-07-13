@@ -1,0 +1,9 @@
+name: 'spotify-app'
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip>=20
+  - pip:
+    - python-dotenv
+    - requests
