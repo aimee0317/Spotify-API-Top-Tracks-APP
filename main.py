@@ -75,5 +75,12 @@ result = search_for_artist(token, 'Led Zeppelin')
 id = result['id']
 songs = top_tracks_by_artist(token, id)
 
+# for i, song in enumerate(songs):
+#   print(f"{i + 1}. {song['name']}")
+
+tracks = []
 for i, song in enumerate(songs):
-    print(f"{i + 1}. {song['name']}")
+    track = (f"{i + 1}. {song['name']}")
+    tracks.append(track)
+
+print(tracks)
